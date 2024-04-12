@@ -44,18 +44,19 @@ export default function Header() {
               />
             </div>
 
-            <div className="flex-1 mx-4 mb-4 lg:mb-0 lg:text-center search">
+            <div className=" mx-4 mb-4 lg:mb-0 lg:text-center search">
               <div className="border border-orange-300 p-1 rounded-lg inn">
                 <input
                   type="text"
                   placeholder="Search Your Products"
-                  className=" px-4 py-2  focus:outline-none in width80"
+                  className="px-4 py-2 focus:outline-none width-full lg:width-80"
                 />
-                <button className="bg-orange-500 text-white px-4 py-2 rounded-lg ml-4">
+                <button className="bg-orange-500 text-white px-4 py-2 rounded-lg ml-2 lg:ml-4 mt-2 lg:mt-0">
                   Search
                 </button>
               </div>
             </div>
+
 
             <div className="flex items-center sea">
               <div className="flex items-center mr-4">
@@ -104,34 +105,35 @@ export default function Header() {
 
 
             <nav className="hidden md:flex space-x-4">
+
               <Link href="#" className="hover:text-green-800">Home</Link>
               <div className="relative">
                 <Link href="#" className="hover:text-green-800">Shop</Link>
-
                 <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
                 </div>
               </div>
+
               <div className="relative">
                 <Link href="#" className="hover:text-green-800">Product</Link>
-
                 <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
                 </div>
               </div>
+
               <div className="relative">
                 <Link href="#" className="hover:text-green-800">Pages</Link>
-
                 <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
                 </div>
               </div>
+
               <Link href="#" className="hover:text-green-800">Blogs</Link>
               <Link href="#" className="hover:text-green-800">Contact Us</Link>
             </nav>
@@ -140,7 +142,7 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <a href="#" className="hidden md:block hover:text-green-800">My Account</a>
-           
+
             <Image
               src="/Icon(2).png"
               alt="Company Logo"

@@ -13,7 +13,7 @@ export default function Sells() {
                             <hr className="border-b-2 border-orange-600 w-20" />
 
                             {topSellingProducts.map(product => (
-                                <div key={product.id} className="store mt-5 flex flex-col gap-4 md:flex-row md:gap-10 relative hover:bg-orange-50">
+                                <div key={product.id} className="store mt-5 cursor-pointer flex flex-col gap-4 md:flex-row md:gap-10 relative hover:bg-orange-50">
                                     <Image
                                         src={product.image}
                                         alt=""
@@ -44,7 +44,9 @@ export default function Sells() {
                                     </div>
                                 </div>
                             ))}
-                            <a href="#" className='text-orange-600 underline'>View All Products</a>
+                           <a href="#" className='mt-5 hover:text-orange-500  hover:border-orange-500 hover:underline'>View All Products</a>
+
+
                         </div>
 
 
@@ -55,7 +57,7 @@ export default function Sells() {
                                 <hr className="border-b-2 border-orange-600 w-20" />
 
                                 {recentlyAddedProducts.map(product => (
-                                    <div key={product.id} className="store flex mt-5 gap-4 relative hover:bg-orange-50">
+                                    <div key={product.id} className="store cursor-pointer flex mt-5 gap-4 relative hover:bg-orange-50">
                                         <Image
                                             src={product.image}
                                             alt=""
@@ -86,7 +88,7 @@ export default function Sells() {
                                         </div>
                                     </div>
                                 ))}
-                                <a href="#" className=' '>View All Products</a>
+                                <a href="#" className='mt-5 hover:text-orange-500  hover:border-orange-500 hover:underline'>View All Products</a>
                             </div>
                         </div>
 
@@ -98,7 +100,7 @@ export default function Sells() {
                                 <hr className="border-b-2 border-orange-600 w-20" />
 
                                 {topRatedProducts.map(product => (
-                                    <div key={product.id} className="store flex mt-5 gap-4 relative hover:bg-orange-50">
+                                    <div key={product.id} className="store cursor-pointer flex mt-5 gap-4 relative hover:bg-orange-50">
                                         <Image
                                             src={product.image}
                                             alt=""
@@ -129,7 +131,7 @@ export default function Sells() {
                                         </div>
                                     </div>
                                 ))}
-                                <a href="#" className=''>View All Products</a>
+                                <a href="#" className='mt-5 hover:text-orange-500  hover:border-orange-500 hover:underline'>View All Products</a>
                             </div>
                         </div>
 
@@ -152,6 +154,7 @@ export default function Sells() {
                                 />
                             </div>
                         </div>
+                        
                     </div>
                 </section>
             </section>

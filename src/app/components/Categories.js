@@ -38,9 +38,9 @@ export default function Categories() {
                             </div>
                         </div>
 
-                        <div className="cat-down flex justify-between">
+                        <div className="cat-down flex justify-between ">
                             {categories.map((category, index) => (
-                                <div key={index} className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
+                                <div key={index} className="border cursor-pointer product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
                                     <Image
                                         src={category.image}
                                         alt={category.alt}

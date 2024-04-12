@@ -7,6 +7,8 @@ export default function Customers() {
         <>
             <section className='width100'>
                 <section className='width80 flex flex-col '>
+
+                    
                     <div className='Customers-up width80 flex justify-center gap-16'>
 
                         <div className='flex flex-col gap-8'>
@@ -29,9 +31,10 @@ export default function Customers() {
                         </div>
                     </div>
 
+
                     <div className="Customers-down flex width80 gap-10 pt-10 pb-10 justify-center">
                         {customers.map((customer, index) => (
-                            <div key={index} className="mask border rounded text-center gap-10 flex p-2 transition-colors duration-300 hover:bg-lime-600">
+                            <div key={index} className="mask border cursor-pointer rounded text-center gap-10 flex p-2 transition-colors duration-300 hover:bg-lime-600">
                                 <div className="maskk text-center bg-white flex flex-col gap-5 p-6">
                                     <Image
                                         src={customer.image}
@@ -56,6 +59,8 @@ export default function Customers() {
                             </div>
                         ))}
                     </div>;
+
+
                 </section>
             </section>
         </>

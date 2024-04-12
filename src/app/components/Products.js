@@ -19,9 +19,10 @@ export default function Products() {
                     </div>
 
                     <div className="products flex flex-col  justify-center mt-20 gap-10">
-                        <div className="products-up flex justify-center gap-28">
+
+                        <div className="products-up flex justify-center gap-28 ">
                             {productsUp.map((product, index) => (
-                                <div key={index} className="card border border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
+                                <div key={index} className="card border cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
                                     <div className="bg-lime-50 m-1">
                                         <Image
                                             src={product.image}
@@ -56,7 +57,7 @@ export default function Products() {
 
                         <div className="products-down flex justify-center gap-28">
                             {productsDown.map((product, index) => (
-                                <div key={index} className="card border border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
+                                <div key={index} className="card border  cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
                                     <div className="bg-lime-50 m-1">
                                         <Image
                                             src={product.image}
@@ -88,6 +89,7 @@ export default function Products() {
                                 </div>
                             ))}
                         </div>;
+                        
                     </div>
                 </section>
             </section>
