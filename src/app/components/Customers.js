@@ -29,9 +29,8 @@ export default function Customers() {
                     </div>
 
                     <div className='Customers-down flex  width80 gap-10 pt-10 pb-10 justify-center'>
-                        <div className='mask border rounded  text-center gap-10 flex p-2 bg-lime-600'>
-                            <div className='maskk  text-center bg-white flex flex-col gap-5 p-6'>
-
+                        <div className="mask border rounded text-center gap-10 flex p-2 transition-colors duration-300 hover:bg-lime-600">
+                            <div className="maskk text-center bg-white flex flex-col gap-5 p-6">
                                 <Image
                                     src="/green.png"
                                     alt=""
@@ -39,8 +38,8 @@ export default function Customers() {
                                     height={50}
                                     className="m-auto"
                                 />
-                                <p className='text-sm'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized.</p>
-                                <div className='text-center flex flex-col gap-1'>
+                                <p className="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized.</p>
+                                <div className="text-center flex flex-col gap-1">
                                     <Image
                                         src="/mask1.png"
                                         alt=""
@@ -48,12 +47,13 @@ export default function Customers() {
                                         height={50}
                                         className="m-auto"
                                     />
-                                    <h1 className='font-bold'>Vilma Hawkins</h1>
-                                    <p className='text-sm'>Customer</p>
+                                    <h1 className="font-bold">Vilma Hawkins</h1>
+                                    <p className="text-sm">Customer</p>
                                 </div>
                             </div>
                         </div>
-                        <div className='mask  border rounded text-center gap-10 flex p-2 bg-lime-50'>
+
+                        <div className='mask border rounded text-center gap-10 flex p-2 transition-colors duration-300 hover:bg-lime-600'>
                             <div className='maskk text-center  bg-white flex flex-col gap-5 p-6'>
 
                                 <Image
@@ -77,7 +77,7 @@ export default function Customers() {
                                 </div>
                             </div>
                         </div>
-                        <div className='mask border rounded  text-center gap-10 flex p-2 bg-lime-50'>
+                        <div className='mask border rounded text-center gap-10 flex p-2 transition-colors duration-300 hover:bg-lime-600'>
                             <div className='maskk text-center  bg-white flex flex-col gap-5 p-6'>
 
                                 <Image

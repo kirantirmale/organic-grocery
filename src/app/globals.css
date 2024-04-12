@@ -271,3 +271,17 @@ color: white;
   background-size: cover;
   background-color: #609e45;
 }
+.over{
+  background-image: url(../../public/rec.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+.men{
+  width: 100%;
+  background-image: url(../../public/men.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

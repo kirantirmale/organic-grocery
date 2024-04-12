@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from "next/image";
 export default function Savers() {
-  return (
-    <>
-     <section className="width100 justify-center flex flex-col pro pt-20 pb-20">
+    return (
+        <>
+            <section className="width100 justify-center flex flex-col pro pt-20 pb-20">
                 <section className="width80">
 
                     <div className='text-center flex flex-col gap-5'>
@@ -18,14 +18,14 @@ export default function Savers() {
                     </div>
 
                     <div className="products flex flex-col gap-10 mt-20 mb-20">
-                        <div className="products-up flex justify-center gap-5 ">
-                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500'>
+                        <div className="products-up flex justify-center gap-28 ">
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro1.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -37,28 +37,28 @@ export default function Savers() {
                                     alt=""
                                     width={60}
                                     height={90}
-                                    className="text-center m-auto"
+                                    className="text-center m-auto pb-5"
 
                                 />
-                                <div className='flex bg-orange-500 text-center w-32 m-auto gap-2 pl-2 rounded pt-1 pb-1 -mb-4'>
-                                    <Image
-                                        src="/shopping.png"
-                                        alt=""
-                                        width={20}
-                                        height={30}
-                                        className=""
-
-                                    />
-                                    <p className='text-white align-middle'>Add to Cart</p>
+                                <div className="absolute pt-80 top-0 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500'>
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro2.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -73,15 +73,25 @@ export default function Savers() {
                                     className="text-center m-auto"
 
                                 />
-
+                                <div className="absolute top-0 pt-80 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500'>
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro3.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -96,15 +106,25 @@ export default function Savers() {
                                     className="text-center m-auto"
 
                                 />
-
+                                <div className="absolute top-0 pt-80 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500 '>
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro4.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -119,20 +139,30 @@ export default function Savers() {
                                     className="text-center m-auto"
 
                                 />
-
+                                <div className="absolute top-0 pt-80 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
+                                </div>
                             </div>
-                            
+
 
                         </div>
-                        <div className="products-down flex justify-center gap-5">
+                        <div className="products-down flex justify-center gap-28">
 
-                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500'>
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro5.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -147,15 +177,25 @@ export default function Savers() {
                                     className="text-center m-auto"
 
                                 />
-
-                            </div> 
-                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500'>
+                                <div className="absolute top-0 pt-80 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro6.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -170,15 +210,25 @@ export default function Savers() {
                                     className="text-center m-auto"
 
                                 />
-
+                                <div className="absolute top-0 pt-80 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
+                                </div>
                             </div>
-                             <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500'>
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro7.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -193,15 +243,25 @@ export default function Savers() {
                                     className="text-center m-auto"
 
                                 />
-
-                            </div> 
-                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500'>
+                                <div className="absolute top-0 pt-80 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='card border border-spacing-3 text-center flex flex-col gap-2 pb-2 hover:border-green-500 relative'>
                                 <div className="bg-lime-50 m-1 ">
 
                                     <Image
                                         src="/pro8.png"
                                         alt=""
-                                        width={180}
+                                        width={220}
                                         height={90}
 
                                     />
@@ -216,12 +276,22 @@ export default function Savers() {
                                     className="text-center m-auto"
 
                                 />
-
+                                <div className="absolute top-0 pt-80 left-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    <div className="flex bg-orange-500 text-center w-32 gap-2 pl-2 rounded pt-1 pb-1">
+                                        <Image
+                                            src="/shopping.png"
+                                            alt=""
+                                            width={20}
+                                            height={30}
+                                        />
+                                        <p className="text-white align-middle">Add to Cart</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </section>
-    </>
-  )
+        </>
+    )
 }
