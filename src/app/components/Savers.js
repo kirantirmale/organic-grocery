@@ -11,11 +11,12 @@ export default function Savers() {
                         <p className="bgcolor text-white p-1 w-48 text-center rounded-md m-auto">Awesome Products</p>
                         <h1 className='text-orange-600 font-bold text-3xl'>Top Savers Today</h1>
                         <div className='flex m-auto gap-5'>
-                            <button className="btn4 p-2 rounded-sm bg-orange-500 text-white w-28">All Products</button>
-                            <button className="btn4 p-2 rounded-sm bg-orange-100 text-black w-28">Best Sellers</button>
-                            <button className="btn4 p-2 rounded-sm bg-orange-100 text-black w-28">New Arrivals</button>
-                            <button className="btn4 p-2rounded-sm bg-orange-100 text-black w-28">Top Rated</button>
+                            <button className="btn4 p-2 transition rounded-sm bg-orange-100 text-black hover:bg-orange-500 hover:text-white w-28">All Products</button>
+                            <button className="btn4 p-2 rounded-sm bg-orange-100 text-black hover:bg-orange-500  hover:text-white w-28">Best Sellers</button>
+                            <button className="btn4 p-2 rounded-sm bg-orange-100 text-black hover:bg-orange-500   hover:text-white w-28">New Arrivals</button>
+                            <button className="btn4 p-2 rounded-sm bg-orange-100 text-black hover:bg-orange-500  hover:text-white w-28">Top Rated</button>
                         </div>
+
                     </div>
 
                     <div className="products flex flex-col  justify-center mt-20 gap-10">
@@ -91,7 +92,7 @@ export default function Savers() {
                                 </div>
                             ))}
                         </div>;
-                        
+
                     </div>
                 </section>
             </section>

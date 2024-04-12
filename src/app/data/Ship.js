@@ -8,19 +8,19 @@ export const items = [
     {
       src: "/natural.png",
       alt: "Natural Icon",
-      title: "Free Shipping.",
+      title: "100% Netural ",
       description: "No one rejects, dislikes.",
     },
     {
       src: "/retry.png",
       alt: "Retry Icon",
-      title: "Free Shipping.",
+      title: "Easy Free Returns",
       description: "No one rejects, dislikes.",
     },
     {
       src: "/wallate.png",
       alt: "Wallate Icon",
-      title: "Free Shipping.",
+      title: "100% Payment Secure.",
       description: "No one rejects, dislikes.",
     },
   ];

@@ -13,7 +13,7 @@ export default function Blogs() {
 
                     <div className='flex flex-row gap-16 justify-center blog'>
                         {blogs.map((blog, index) => (
-                            <div key={index} className='p-3 flex flex-col gap-2 border rounded-lg blog relative hover:border-orange-500 gro group'>
+                            <div key={index} className='p-3 cursor-pointer flex flex-col gap-2 border rounded-lg blog relative hover:border-orange-500 gro group'>
                                 <Image
                                     src={blog.image}
                                     alt={blog.alt}
@@ -61,7 +61,7 @@ export default function Blogs() {
                             <button className="btn4 p-3 rounded-md bg-orange-500  text-white w-40 ">Become a Partner</button>
                         </div>
 
-                        <div className='m-auto grid grid-cols-4 gap-14'>
+                        <div className='m-auto grid grid-cols-4 gap-14 '>
                             {Blogimages.map((image, index) => (
                                 <Image key={index} src={image} alt="img" width={170} height={75} />
                             ))}
