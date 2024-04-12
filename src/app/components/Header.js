@@ -140,11 +140,7 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <a href="#" className="hidden md:block hover:text-green-800">My Account</a>
-            <a href="#" className="text-green-800 hover:text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 9l6 6 6-6" />
-              </svg>
-            </a>
+           
             <Image
               src="/Icon(2).png"
               alt="Company Logo"

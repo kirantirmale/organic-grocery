@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import { categories } from '../data/Cate';
 export default function Categories() {
     return (
         <>
@@ -37,132 +38,29 @@ export default function Categories() {
                             </div>
                         </div>
 
-                        <div className="cat-down flex  justify-between ">
-                            <div className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
-                                <Image
-                                    src="/grocery-1.png"
-                                    alt=""
-                                    width={100}
-                                    height={90}
-                                />
-                                <h5 className="font-bold">Vegetable</h5>
-                                <p>25+ Products</p>
-
-
-                                <div className="absolute top-48 right-0 left-10 transform translate-x-2 -translate-y-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <div className="cat-down flex justify-between">
+                            {categories.map((category, index) => (
+                                <div key={index} className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
                                     <Image
-                                        src="/aarow.png"
-                                        alt=""
-                                        width={40}
+                                        src={category.image}
+                                        alt={category.alt}
+                                        width={100}
                                         height={90}
-                                        className=""
                                     />
+                                    <h5 className="font-bold">{category.title}</h5>
+                                    <p>{category.products}</p>
+                                    <div className="absolute top-48 right-0 left-10 transform translate-x-2 -translate-y-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                        <Image
+                                            src="/aarow.png"
+                                            alt=""
+                                            width={40}
+                                            height={90}
+                                            className=""
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-
-
-
-                            <div className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
-                                <Image
-                                    src="/grocery-2.png"
-                                    alt=""
-                                    width={100}
-                                    height={90}
-
-                                />
-                                <h5 className="font-bold">Fresh Fruits</h5>
-                                <p>85+ Products</p>
-                                <div className="absolute top-48 right-0 left-10 transform translate-x-2 -translate-y-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <Image
-                                        src="/aarow.png"
-                                        alt=""
-                                        width={40}
-                                        height={90}
-                                        className=""
-                                    />
-                                </div>
-                            </div>
-                            <div className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
-                                <Image
-                                    src="/grocery-3.png"
-                                    alt=""
-                                    width={100}
-                                    height={90}
-
-                                />
-                                <h5 className="font-bold">Beverages</h5>
-                                <p>68+ Products</p>
-                                <div className="absolute top-48 right-0 left-10 transform translate-x-2 -translate-y-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <Image
-                                        src="/aarow.png"
-                                        alt=""
-                                        width={40}
-                                        height={90}
-                                        className=""
-                                    />
-                                </div>
-                            </div>
-                            <div className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
-                                <Image
-                                    src="/grocery-4.png"
-                                    alt=""
-                                    width={100}
-                                    height={90}
-
-                                />
-                                <h5 className="font-bold">Sea Food</h5>
-                                <p>29+ Products</p>
-                                <div className="absolute top-48 right-0 left-10 transform translate-x-2 -translate-y-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <Image
-                                        src="/aarow.png"
-                                        alt=""
-                                        width={40}
-                                        height={90}
-                                        className=""
-                                    />
-                                </div>
-                            </div>
-                            <div className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
-                                <Image
-                                    src="/grocery-5.png"
-                                    alt=""
-                                    width={100}
-                                    height={90}
-
-                                />
-                                <h5 className="font-bold"> Package Food</h5>
-                                <p>68+ Products</p>
-                                <div className="absolute top-48 right-0 left-10 transform translate-x-2 -translate-y-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <Image
-                                        src="/aarow.png"
-                                        alt=""
-                                        width={40}
-                                        height={90}
-                                        className=""
-                                    />
-                                </div>
-                            </div>
-                            <div className="border product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
-                                <Image
-                                    src="/grocery-6.png"
-                                    alt=""
-                                    width={100}
-                                    height={90}
-
-                                />
-                                <h5 className="font-bold">Backery Items</h5>
-                                <p>68+ Products</p>
-                                <div className="absolute top-48 right-0 left-10 transform translate-x-2 -translate-y-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <Image
-                                        src="/aarow.png"
-                                        alt=""
-                                        width={40}
-                                        height={90}
-                                        className=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                            ))}
+                        </div>;
                     </div>
                     <div className="flex flex-col  " >
                         <Image
