@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import { categories } from '../data/Cate';
+import { categories } from '../../data/Cate';
 export default function Categories() {
     return (
         <>

@@ -56,7 +56,8 @@
   .sea {
     display: none;
   }
-  .img2{
+
+  .img2 {
     height: 30px;
     width: 30px;
   }
@@ -188,63 +189,73 @@
   font-weight: 400;
   line-height: 34px;
   text-align: left;
-color: white;
+  color: white;
 }
+
 .Catogories ul li {
 
   font-size: 16px;
   font-weight: 400;
   line-height: 34px;
   text-align: left;
-color: white;
+  color: white;
 }
+
 .Customer ul li {
 
   font-size: 16px;
   font-weight: 400;
   line-height: 34px;
   text-align: left;
-color: white;
+  color: white;
 }
-.nav{
+
+.nav {
   justify-content: space-between;
 }
-.btn1{
+
+.btn1 {
   background-color: #609e45;
   padding: 18px;
   border-radius: 5px;
   color: white;
   font-weight: 600;
 }
-.btn2{
- 
+
+.btn2 {
+
   padding: 18px;
   border-radius: 5px;
   color: #609e45;
   font-weight: 600;
   border: 2px solid #609e45;
 }
+
 /* --------------Home------------- */
-.home{
+.home {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image:  url(../../public/home.png) ;
+  background-image: url(../../public/home.png);
   background-color: #f6f0f0;
 
 }
-.textcolor{
+
+.textcolor {
   /* background: #609e45; */
   color: #609e45;
 }
-.bgcolor{
+
+.bgcolor {
   background: #609e45;
   /* color: #609e45; */
 }
-.gro{
+
+.gro {
   transition: 0.6s;
 }
-.pro{
+
+.pro {
   background-image: url(../../public/BG11.png);
   width: 100%;
   background-position: center;
@@ -252,10 +263,12 @@ color: white;
   background-repeat: no-repeat;
 
 }
-.card{
-  transition: 0.6s; 
+
+.card {
+  transition: 0.6s;
 }
-.veg{
+
+.veg {
   background-image: url(../../public/veg.png);
   width: 100%;
   background-position: center;
@@ -263,7 +276,8 @@ color: white;
   background-size: cover;
   background-color: #609e45;
 }
-.app{
+
+.app {
   background-image: url(../../public/appbg.png);
   width: 100%;
   background-position: center;
@@ -271,17 +285,52 @@ color: white;
   background-size: cover;
   background-color: #609e45;
 }
-.over{
+
+.over {
   background-image: url(../../public/rec.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50px;
 }
-.men{
+
+.men {
   width: 100%;
   background-image: url(../../public/men.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+
+/* -----------about----------- */
+.about {
+  width: 100%;
+  background-image: url(../../public/BannerSection.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* ---------------store------------- */
+.store-main {
+  background-color: #f5e3dc7d;
+  width: 100%;
+}
+
+.store {
+
+  background-image: url(../../public/baingan.png);
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  background-size: cover;
+}
+.maskk:hover .Mask{
+background-color: #609e45;
+}
+
+.active-summary {
+  background-color: #34D399; /* Your desired green color */
 }

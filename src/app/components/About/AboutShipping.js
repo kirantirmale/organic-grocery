@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
-import { items } from '../data/Ship';
-export default function Shipping() {
+import { items } from '../../data/Ship';
+export default function AboutShipping() {
     return (
         <>
             <section className="w-full">

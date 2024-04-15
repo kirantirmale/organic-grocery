@@ -1,6 +1,6 @@
-import Navbar from "../app/components/Header";
+import Navbar from "./components/Header";
 import "./globals.css";
-import Footer from "../app/components/Footer";
+import Footer from "./components/Footer";
 
 
 export default function RootLayout({

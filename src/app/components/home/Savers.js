@@ -1,15 +1,15 @@
 import React from 'react'
 import Image from "next/image";
-import { productsDown, productsUp } from '../data/Produ';
-export default function Products() {
+import { productsDown, productsUp } from '../../data/Produ';
+export default function Savers() {
     return (
         <>
             <section className="width100 justify-center flex flex-col pro pt-20 pb-20">
-                <section className="width80 flex flex-col justify-center">
+                <section className="width80">
 
                     <div className='text-center flex flex-col gap-5'>
                         <p className="bgcolor text-white p-1 w-48 text-center rounded-md m-auto">Awesome Products</p>
-                        <h1 className='text-orange-600 font-bold text-3xl'>Featured Products</h1>
+                        <h1 className='text-orange-600 font-bold text-3xl'>Top Savers Today</h1>
                         <div className='flex m-auto gap-5'>
                             <button className="btn4 p-2 transition rounded-sm bg-orange-100 text-black hover:bg-orange-500 hover:text-white w-28">All Products</button>
                             <button className="btn4 p-2 rounded-sm bg-orange-100 text-black hover:bg-orange-500  hover:text-white w-28">Best Sellers</button>
@@ -21,7 +21,8 @@ export default function Products() {
 
                     <div className="products flex flex-col  justify-center mt-20 gap-10">
 
-                        <div className="products-up flex justify-center gap-28 ">
+
+                        <div className="products-up flex justify-center gap-28">
                             {productsUp.map((product, index) => (
                                 <div key={index} className="card border cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
                                     <div className="bg-lime-50 m-1">
@@ -54,11 +55,12 @@ export default function Products() {
                                     </div>
                                 </div>
                             ))}
-                        </div>;
+                        </div>
+
 
                         <div className="products-down flex justify-center gap-28">
                             {productsDown.map((product, index) => (
-                                <div key={index} className="card border  cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
+                                <div key={index} className="card border cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
                                     <div className="bg-lime-50 m-1">
                                         <Image
                                             src={product.image}
@@ -89,7 +91,7 @@ export default function Products() {
                                     </div>
                                 </div>
                             ))}
-                        </div>;
+                        </div>
 
                     </div>
                 </section>

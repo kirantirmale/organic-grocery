@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import { Blogimages, blogs } from '../data/Blog';
+import { Blogimages, blogs } from '../../data/Blog';
 export default function Blogs() {
     return (
         <>
@@ -65,7 +65,7 @@ export default function Blogs() {
                             {Blogimages.map((image, index) => (
                                 <Image key={index} src={image} alt="img" width={170} height={75} />
                             ))}
-                        </div>;
+                        </div>
 
                     </div>
                 </section>

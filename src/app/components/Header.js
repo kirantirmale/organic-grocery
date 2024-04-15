@@ -104,9 +104,19 @@ export default function Header() {
           <div className="flex items-center space-x-4">
 
 
-            <nav className="hidden md:flex space-x-4">
+            <nav className="hidden md:flex space-x-6">
 
-              <Link href="#" className="hover:text-green-800">Home</Link>
+              <Link href="/" className="hover:text-green-800">Home</Link>
+
+              <div className="relative">
+                <Link href="/pages/AboutPage" className="hover:text-green-800">About Us</Link>
+                <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
+                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
+                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
+                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
+                </div>
+              </div>
+
               <div className="relative">
                 <Link href="#" className="hover:text-green-800">Shop</Link>
                 <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
@@ -115,7 +125,6 @@ export default function Header() {
                   <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
                 </div>
               </div>
-
               <div className="relative">
                 <Link href="#" className="hover:text-green-800">Product</Link>
                 <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
@@ -135,7 +144,7 @@ export default function Header() {
               </div>
 
               <Link href="#" className="hover:text-green-800">Blogs</Link>
-              <Link href="#" className="hover:text-green-800">Contact Us</Link>
+              <Link href="/pages/ContactUsPage" className="hover:text-green-800">Contact Us</Link>
             </nav>
           </div>
 

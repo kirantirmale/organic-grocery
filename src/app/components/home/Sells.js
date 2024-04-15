@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import { recentlyAddedProducts, topRatedProducts, topSellingProducts } from '../data/Sell';
+import { recentlyAddedProducts, topRatedProducts, topSellingProducts } from '../../data/Sell';
 export default function Sells() {
     return (
         <>
