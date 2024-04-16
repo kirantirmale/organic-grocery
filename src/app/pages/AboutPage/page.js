@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutHome from '../../components/About/AboutHome'
+import AboutHome from '../../components/AboutHome'
 import Subscribe from '../../components/home/Subscribe'
 import AboutBlogs from '../../components/About/AboutBlogs'
 import AboutShipping from '../../components/About/AboutShipping'
@@ -12,7 +12,7 @@ import Store from '../../components/About/Store'
 export default function AboutPage() {
   return (
     <>
-      <AboutHome Title="About Us" heading='Learn more about us'/>
+      <AboutHome Title="About Us" heading='Learn more about us' subheading=''/>
       <OrganicProducts/>
       <Store/>
       <AboutShipping/>

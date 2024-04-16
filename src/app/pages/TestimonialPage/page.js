@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutHome from '../../components/About/AboutHome'
+import AboutHome from '../../components/AboutHome'
 import TestimonialCustomers from '../../components/Testimonial/TestimonialCustom'
 
 export default function TestimonialPage() {

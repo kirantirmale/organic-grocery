@@ -25,8 +25,8 @@ const NotFound = () => {
           Please refresh the page or return to the homepage.
         </p>
         <div className="flex mt-8 space-x-4 justify-center">
-          <button className="btn1">Go to Homepage</button>
-          <button className="btn2">Help Center</button>
+          <Link href='/'className="btn1">Go to Homepage</Link>
+          <Link  href='#' className="btn2">Help Center</Link>
         </div>
       </div>
     </section>

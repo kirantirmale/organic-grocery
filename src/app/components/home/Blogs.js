@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import { Blogimages, blogs } from '../../data/Blog';
+import Link from 'next/link';
 export default function Blogs() {
     return (
         <>
@@ -49,7 +50,7 @@ export default function Blogs() {
                     </div>;
 
                     <div className='m-auto'>
-                        <button className="border border-orange-600 p-3 rounded-md bg-white text-orange-600 font-bold  m-auto">View All Blogs</button>
+                        <Link href="/pages/BlogsPage" className="border border-orange-600 p-3 rounded-md bg-white text-orange-600 font-bold  m-auto">View All Blogs</Link>
                     </div>
 
                     <div className='flex pt-10 justify-center'>

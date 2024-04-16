@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AboutHome({Title,heading}) {
+export default function AboutHome({Title,heading,subheading}) {
   return (
     <>
       <section className='width100 about'>
@@ -9,7 +9,7 @@ export default function AboutHome({Title,heading}) {
             <h1 className='text-3xl font-bold text-lime-600'>
               {heading}
             </h1>
-            <p className='text-xl'>Home -<span className='text-orange-500'> {Title}</span></p>
+            <p className='text-xl'>Home - {subheading}<span className='text-orange-500'> {Title}</span></p>
           </div>
         </section>
       </section>
