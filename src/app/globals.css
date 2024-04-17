@@ -334,3 +334,16 @@ background-color: #609e45;
 .active-summary {
   background-color: #34D399; /* Your desired green color */
 }
+.withh80{
+  width: 75%;
+}
+.withh20{
+  width: 25%;
+}
+
+.withh30{
+  width: 30%;
+}
+.withh70{
+  width: 70%;
+}

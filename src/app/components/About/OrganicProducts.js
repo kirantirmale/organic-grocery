@@ -73,7 +73,7 @@ export default function OrganicProducts() {
               <div className='flex flex-row gap-2'>
 
                 <div className=''>
-                <Image
+                  <Image
                     src="/co.png"
                     alt=""
                     width={40}

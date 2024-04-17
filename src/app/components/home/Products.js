@@ -54,7 +54,7 @@ export default function Products() {
                                     </div>
                                 </div>
                             ))}
-                        </div>;
+                        </div>
 
                         <div className="products-down flex justify-center gap-28">
                             {productsDown.map((product, index) => (
@@ -89,7 +89,7 @@ export default function Products() {
                                     </div>
                                 </div>
                             ))}
-                        </div>;
+                        </div>
 
                     </div>
                 </section>

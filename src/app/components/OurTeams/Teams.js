@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 export default function OurTeams() {
     return (
         <section className="w-full flex flex-col justify-center">
-            <section className="w-4/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 pb-20 pt-20">
+            <section className="w-4/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 pb-20 pt-20 width80">
                 {Team.map((teamMember, index) => (
                     <Link href='' key={index} className="bg-white rounded-lg border relative shadow-lg p-2 hover:border-lime-500">
                         <Image
@@ -35,9 +35,9 @@ export default function OurTeams() {
                     </Link>
                 ))}
             </section>
-            {/* <div className='text-center mb-10'>
-        <Link href='/pages/ContactUsPage'> Don’t find your answer?<span className='text-xl font-bold text-lime-600'> Contact us</span></Link>
-        </div> */}
+            <div className='text-center mb-10'>
+        <Link href='/pages/ContactUsPage' className='text-xl font-bold'> Want join our team? <br/> Call Us on<span className='text-xl font-bold text-lime-600'> +44 123 456 7890 </span></Link>
+        </div>
         </section>
     );
 }

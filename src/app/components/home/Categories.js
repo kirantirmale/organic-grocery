@@ -60,7 +60,7 @@ export default function Categories() {
                                     </div>
                                 </div>
                             ))}
-                        </div>;
+                        </div>
                     </div>
                     <div className="flex flex-col  " >
                         <Image

@@ -3,8 +3,10 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
 export default function Header() {
+
   return (
     <>
       <section className="main width100">
@@ -103,45 +105,38 @@ export default function Header() {
         <header className=" text-dark flex items-center justify-between px-6 py-4">
           <div className="flex items-center space-x-4">
 
-
             <nav className="hidden md:flex space-x-6">
 
               <Link href="/" className="hover:text-green-800">Home</Link>
 
               <div className="relative">
                 <Link href="/pages/AboutPage" className="hover:text-green-800">About Us</Link>
-                <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
-                </div>
               </div>
 
-              <div className="relative">
-                <Link href="#" className="hover:text-green-800">Shop</Link>
-                <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
-                </div>
-              </div>
-              <div className="relative">
-                <Link href="#" className="hover:text-green-800">Product</Link>
-                <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
-                </div>
-              </div>
+              <Link href="/pages/ProductsPage" className="hover:text-green-800">
+                <select id="weight-center" name="weight" className=" w-16" >
+                  <option value="shop">Shop</option>
+                  <option value="1kg" >ProductDetailPage</option>
+                  <option value="2kg">2kg</option>
+                  <option value="3kg">3kg</option>
+                </select>
+              </Link>
 
-              <div className="relative">
-                <Link href="#" className="hover:text-green-800">Pages</Link>
-                <div className="absolute top-full left-0 w-36 bg-white shadow-md rounded-lg py-2 mt-1 hidden">
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 1</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 2</Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-green-800">Dropdown Item 3</Link>
-                </div>
-              </div>
+              <Link href="/pages/ProductsPage" className="hover:text-green-800">
+                <select id="product" name="weight" className=" w-20" >
+                  <option value="shop">Product</option>
+                  <option value="FaQs" >FaQs</option>
+
+                </select>
+              </Link>
+
+              <Link href="/pages/ProductsPage" className="hover:text-green-800">
+                <select id="Pages" name="weight" className=" w-16" >
+                  <option value="shop" >Pages</option>
+                  <option value="/pages/ProductDetailPage">Our Team</option>
+                  <option value="FAQsPage">FAQsPage</option>
+                </select>
+              </Link>
 
               <Link href="/pages/BlogsPage" className="hover:text-green-800">Blogs</Link>
               <Link href="/pages/ContactUsPage" className="hover:text-green-800">Contact Us</Link>
