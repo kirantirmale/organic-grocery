@@ -137,7 +137,7 @@ export default function Header() {
                 </select>
               </Link>
 
-              <Link href="" className="hover:text-green-800">
+              <Link href="/TeamPage" className="hover:text-green-800">
                 <select id="Pages" name="weight" className=" w-16" >
                   <option value="shop" >Pages</option>
                   <option value="OurTeam">Our Team</option>
