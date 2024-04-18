@@ -36,57 +36,52 @@ export default function Header() {
 
       <section className="width100">
         <section className="width80">
-          <section className="w-full  flex items-center justify-between second-head">
+          <section className="flex items-center justify-between py-4 md:py-6">
             <div className="flex items-center">
               <Image
                 src="/logo.jpg"
                 alt="Company Logo"
+                className=""
                 width={300}
-                height={90}
+                height={40}
               />
             </div>
 
-            <div className=" mx-4 mb-4 lg:mb-0 lg:text-center search">
-              <div className="border border-orange-300 p-1 rounded-lg inn">
+            <div className="">
+              <div className="border border-orange-300 rounded p-1">
                 <input
                   type="text"
                   placeholder="Search Your Products"
-                  className="px-4 py-2 focus:outline-none width-full lg:width-80"
+                  className="focus:outline-none w-auto"
                 />
-                <button className="bg-orange-500 text-white px-4 py-2 rounded-lg ml-2 lg:ml-4 mt-2 lg:mt-0">
+                <button className="bg-orange-500 text-white px-4 py-2 rounded-lg ml-2 md:ml-0 mt-2 md:mt-0 md:inline-block md:items-center">
                   Search
                 </button>
               </div>
             </div>
 
 
-            <div className="flex items-center sea">
-              <div className="flex items-center mr-4">
+            <div className="flex items-center">
+              <div className="hidden md:flex items-center mr-4">
                 <Image
                   src="/Icon.png"
                   alt="Company Logo"
-                  width={40}
+                  className=""
+                  width={30}
                   height={40}
-                  className="img1"
                 />
                 <div className="flex flex-col ml-2">
                   <span>Call Us on</span>
                   <span className="text-lime-600">+44 123 456 7890</span>
                 </div>
               </div>
-              <Image
-                src="/Rectangle.png"
-                alt="Company Logo"
-                width={1}
-                height={1}
-              />
-              <div className="flex items-center ml-1">
+              <div className="hidden md:flex items-center ml-4">
                 <Image
                   src="/Icon(1).png"
                   alt="Company Logo"
-                  width={40}
+                  className=""
+                  width={30}
                   height={40}
-                  className="img1"
                 />
                 <div className="flex flex-col ml-2">
                   <span>Email Us </span>
@@ -95,12 +90,22 @@ export default function Header() {
               </div>
             </div>
 
+            <div className="md:hidden mx-4">
+              <button className="bg-orange-500 text-white px-4 py-2 rounded-lg">
+                Menu
+              </button>
+            </div>
           </section>
         </section>
       </section>
+
+
+
       <section className="width80">
         <hr />
       </section>
+
+
       <section className="width80">
         <header className=" text-dark flex items-center justify-between px-6 py-4">
           <div className="flex items-center space-x-4">
@@ -110,19 +115,21 @@ export default function Header() {
               <Link href="/" className="hover:text-green-800">Home</Link>
 
               <div className="relative">
-                <Link href="/pages/AboutPage" className="hover:text-green-800">About Us</Link>
+                <Link href="/AboutPage" className="hover:text-green-800">About Us</Link>
               </div>
 
-              <Link href="/pages/ProductsPage" className="hover:text-green-800">
+              <Link href="/ProductsPage" className="hover:text-green-800">
                 <select id="weight-center" name="weight" className=" w-16" >
                   <option value="shop">Shop</option>
-                  <option value="1kg" >ProductDetailPage</option>
-                  <option value="2kg">2kg</option>
-                  <option value="3kg">3kg</option>
+                  <option value="1kg" >Product Page</option>
+                  <option value="2kg">FaQs</option>
+                  <option value="3kg">Team Page</option>
                 </select>
               </Link>
 
-              <Link href="/pages/ProductsPage" className="hover:text-green-800">
+              
+
+              <Link href="" className="hover:text-green-800">
                 <select id="product" name="weight" className=" w-20" >
                   <option value="shop">Product</option>
                   <option value="FaQs" >FaQs</option>
@@ -130,34 +137,40 @@ export default function Header() {
                 </select>
               </Link>
 
-              <Link href="/pages/ProductsPage" className="hover:text-green-800">
+              <Link href="" className="hover:text-green-800">
                 <select id="Pages" name="weight" className=" w-16" >
                   <option value="shop" >Pages</option>
-                  <option value="/pages/ProductDetailPage">Our Team</option>
+                  <option value="OurTeam">Our Team</option>
                   <option value="FAQsPage">FAQsPage</option>
                 </select>
               </Link>
 
-              <Link href="/pages/BlogsPage" className="hover:text-green-800">Blogs</Link>
-              <Link href="/pages/ContactUsPage" className="hover:text-green-800">Contact Us</Link>
+              <Link href="/BlogsPage" className="hover:text-green-800">Blogs</Link>
+              <Link href="/ContactUsPage" className="hover:text-green-800">Contact Us</Link>
             </nav>
           </div>
 
 
           <div className="flex items-center space-x-4">
-            <a href="#" className="hidden md:block hover:text-green-800">My Account</a>
+            <Link href="#" className="hidden md:block hover:text-green-800">My Account</Link>
 
+
+            <Link href="/pages/TeamPage">
             <Image
               src="/Icon(2).png"
               alt="Company Logo"
               width={40}
               height={40}
-            /><Image
+            />
+            </Link>
+            <Link href="/ShoppingCart">
+            <Image
               src="/Icon(3).png"
               alt="Company Logo"
               width={40}
-              height={40}
+              height={40} 
             />
+            </Link>
           </div>
         </header>
       </section>

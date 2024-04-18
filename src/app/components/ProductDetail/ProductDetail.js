@@ -106,7 +106,6 @@ export default function ProductDetail() {
                                             <option value="9">9</option>
                                         </select>
                                     </div>
-
                                     <div className="flex justify-between items-center border p-2 bg-lime-50 mt-2">
                                         <label for="size" className="mr-2">Size</label>
                                         <select id="size" name="size" className="py-2 bg-lime-50 w-20">

@@ -393,7 +393,7 @@ export default function PageFAQs() {
 
       </section>
         <div className='text-center mb-10'>
-        <Link href='/pages/ContactUsPage'> Don’t find your answer?<span className='text-xl font-bold text-lime-600'> Contact us</span></Link>
+        <Link href='/ContactUsPage'> Don’t find your answer?<span className='text-xl font-bold text-lime-600'> Contact us</span></Link>
         </div>
     </section>
   );

@@ -50,7 +50,7 @@ export default function Blogs() {
                     </div>;
 
                     <div className='m-auto'>
-                        <Link href="/pages/BlogsPage" className="border border-orange-600 p-3 rounded-md bg-white text-orange-600 font-bold  m-auto">View All Blogs</Link>
+                        <Link href="" className="border border-orange-600 p-3 rounded-md bg-white text-orange-600 font-bold  m-auto">View All Blogs</Link>
                     </div>
 
                     <div className='flex pt-10 justify-center'>

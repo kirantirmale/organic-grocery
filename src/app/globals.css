@@ -327,6 +327,22 @@
   /* background-position: ; */
   background-size: cover;
 }
+
+.thank{
+  
+  background-image: url(../../public/tbg.png);
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  background-size: cover;
+}
+.sig{
+  
+  background-image: url(../../public/sig.png);
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  background-size: cover;
+}
+
 .maskk:hover .Mask{
 background-color: #609e45;
 }
@@ -346,4 +362,8 @@ background-color: #609e45;
 }
 .withh70{
   width: 70%;
+}
+.w70{
+  width: 70%;
+  margin: auto;
 }

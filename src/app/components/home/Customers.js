@@ -63,7 +63,7 @@ export default function Customers() {
                         ))}
                     </div>
 
-                    <Link href="/pages/TestimonialPage" className="block px-4 py-2 rounded mb-4 text-center  bg-orange-400 m-auto">View More</Link>
+                    <Link href="/TestimonialPage" className="block px-4 py-2 rounded mb-4 text-center  bg-orange-400 m-auto">View More</Link>
 
                 </section>
             </section>

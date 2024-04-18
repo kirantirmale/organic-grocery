@@ -36,7 +36,7 @@ export default function OurTeams() {
                 ))}
             </section>
             <div className='text-center mb-10'>
-        <Link href='/pages/ContactUsPage' className='text-xl font-bold'> Want join our team? <br/> Call Us on<span className='text-xl font-bold text-lime-600'> +44 123 456 7890 </span></Link>
+        <Link href='/ContactUsPage' className='text-xl font-bold'> Want join our team? <br/> Call Us on<span className='text-xl font-bold text-lime-600'> +44 123 456 7890 </span></Link>
         </div>
         </section>
     );

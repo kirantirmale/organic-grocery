@@ -65,7 +65,7 @@ export default function FeaturedProduct() {
                                     ))}
                                 </div>
                                 <hr />
-                                <p className=''>Subtotal:<span className='font-bold'> ${subtotal}</span></p>
+                                <p className=''>Subtotal:<span className='font-bold'> ${}</span></p>
                             </div>
 
 
@@ -74,7 +74,7 @@ export default function FeaturedProduct() {
                                 <hr />
                                 <div className="products-up grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-5">
                                     {productsUp.map((product, index) => (
-                                        <Link href='/pages/ProductDetailPage' key={index} className="card border cursor-pointer border-spacing-3 items-center flex  gap-5 hover:border-lime-500 relative ">
+                                        <Link href='/ProductDetailPage' key={index} className="card border cursor-pointer border-spacing-3 items-center flex  gap-5 hover:border-lime-500 relative ">
                                             <div className="bg-lime-50 m-1 ">
                                                 <Image
                                                     src={product.image}

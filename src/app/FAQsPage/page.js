@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutHome from '../../components/AboutHome'
+import AboutHome from '../components/AboutHome'
 import Subscribe from '@/app/components/home/Subscribe'
 import PageFAQs from '@/app/components/FAQs/PageFAQs'
 

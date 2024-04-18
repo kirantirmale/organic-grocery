@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutHome from '../../components/AboutHome'
-import TestimonialCustomers from '../../components/Testimonial/TestimonialCustom'
+import AboutHome from '../components/AboutHome'
+import TestimonialCustomers from '../components/Testimonial/TestimonialCustom'
 
 export default function TestimonialPage() {
   return (

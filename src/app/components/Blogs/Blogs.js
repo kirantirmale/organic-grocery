@@ -10,7 +10,7 @@ export default function Blogs() {
         <section className='width80'>
           <div className='grid grid-cols-3 gap-16 justify-center blog mt-20 mb-20'>
             {blogs2.map((blog, index) => (
-              <Link href={`/pages/BlogDetailPage?id=${blog.id}`} key={index}>
+              <Link href={`/BlogDetailPage?id=${blog.id}`} key={index}>
                 <div className='p-3 cursor-pointer border rounded-lg blog relative hover:border-orange-500 group justify-center flex flex-col'>
                   <Image
                     src={blog.image}
