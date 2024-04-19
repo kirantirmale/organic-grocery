@@ -16,11 +16,13 @@ export default function Categories() {
                             className="-ml-11"
                         />
                     </div>
-                    <div className="categoris flex flex-col gap-16  ">
-                        <div className="cat-up flex gap-20">
-                            <div className="cat-left flex flex-col gap-5 w-2/4">
+
+                    <div className="categoris flex flex-col gap-5  justify-center">
+
+                        <div className="cat-up grid gap-20 sm:grid-cols-1 lg:grid-cols-3">
+                            <div className="cat-left flex flex-col gap-5 w-2/4 sm:justify-between">
                                 <p className="bgcolor   text-white p-1 w-48 text-center rounded-md">Hot Categories</p>
-                                <h5 className="text-orange-600 font-bold text-3xl">
+                                <h5 className="text-orange-600 font-bold text-3xl sm:text-center ">
                                     Browse Our Categories
                                 </h5>
                             </div>
@@ -38,14 +40,15 @@ export default function Categories() {
                             </div>
                         </div>
 
-                        <div className="cat-down flex justify-between ">
+                        <div className="cat-down width80 justify-between grid grid-cols-1 md:grid-cols-3 gap-5 lg:grid-cols-6 ">
                             {categories.map((category, index) => (
-                                <div key={index} className="border cursor-pointer product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
+                                <div key={index} className="border  cursor-pointer product bg-white border-spacing-4 p-5 text-center flex flex-col gap-2 gro relative group">
                                     <Image
                                         src={category.image}
                                         alt={category.alt}
                                         width={100}
                                         height={90}
+                                        className="m-auto"
                                     />
                                     <h5 className="font-bold">{category.title}</h5>
                                     <p>{category.products}</p>

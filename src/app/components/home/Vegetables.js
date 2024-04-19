@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import Link from 'next/link';
 export default function Vegetables() {
   return (
     <>
@@ -21,8 +22,8 @@ export default function Vegetables() {
             <h1 className="text-4xl font-bold text-white">Get Up to 15% Off Vegetables</h1>
             <h5 className='text-white text-2xl'>We supply hight quality organic product</h5>
             <div className="flex gap-4 m-auto"> 
-            <button className="btn4 p-3 rounded-md bg-white text-lime-500 font-bold w-28">Shop Now</button>
-            <button className="btn4 p-3 rounded-md border text-white w-28">Contact Us</button>
+            <Link href='#' className="btn4 p-3 rounded-md bg-white text-lime-500 font-bold w-28">Shop Now</Link>
+            <Link  href='/ContactUsPage' className="btn4 p-3 rounded-md border text-white w-28">Contact Us</Link>
             </div>
           </div>
 

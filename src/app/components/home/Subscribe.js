@@ -15,19 +15,19 @@ export default function Subscribe() {
                             <br />
                             Lorem Ipsum has been the industry's standard dummy tex
                         </p>
-                        <div class="flex flex-row gap-5 w-2/3 m-auto">
+                        <div className=" flex-row gap-5  m-auto  grid grid-cols-1 md:grid-cols-3 sm:w-auto lg:grid-cols-3">
                             <input
                                 type="text"
                                 placeholder="Your Name"
-                                class="border p-4 rounded-l-md flex-grow w-16"
+                                className="border p-4 rounded-l-md flex-grow "
                             />
                             <input
                                 type="email"
                                 placeholder="Enter Your Email"
-                                class="border p-4 rounded-r-md flex-grow"
+                                className="border p-4 rounded-r-md flex-grow"
                             />
                             <button
-                                class="border p-4 rounded-md bgcolor text-white font-bold ml-2 "
+                                className="border p-4 rounded-md bgcolor text-white font-bold   sm:w-auto"
                             >
                                 Subscribe Now
                             </button>

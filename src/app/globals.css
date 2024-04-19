@@ -15,7 +15,7 @@
 
 .main {
   width: 100%;
-  height: 40px;
+  /* height: 40px; */
   gap: 0px;
   background: #609e45;
 }
@@ -39,56 +39,10 @@
   padding: 2px;
   border: 1px solid white;
 }
-
-@media only screen and (max-width: 320px) {
-  .center {
-    display: none;
-  }
-
-  .right-side {
-    display: none;
-  }
-
-  .search {
-    display: none;
-  }
-
-  .sea {
-    display: none;
-  }
-
-  .img2 {
-    height: 30px;
-    width: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .center {
-    display: none;
-  }
-
-  .right-side {
-    display: none;
-  }
-
-  .inn {
-    margin-top: 20px;
-  }
-
-  .in {
-
-    width: 170px;
-    text-align: center;
-  }
-
-  .sea {
-    display: none;
-  }
+/* 
 
 
 
-}
 
 /* -------------second-head------------------ */
 
@@ -139,7 +93,7 @@
 }
 
 .left {
-  width: 351px;
+  /* width: 351px; */
   height: 284px;
   top: 9508px;
   left: 309px;
@@ -157,7 +111,7 @@
 }
 
 .log {
-  width: 303.83px;
+  /* width: 303.83px; */
   height: 59px;
   top: 9508px;
   left: 309px;
@@ -348,7 +302,7 @@ background-color: #609e45;
 }
 
 .active-summary {
-  background-color: #34D399; /* Your desired green color */
+  background-color: #34D399;
 }
 .withh80{
   width: 75%;
@@ -367,3 +321,66 @@ background-color: #609e45;
   width: 70%;
   margin: auto;
 }
+
+@media only screen and (max-width: 320px) {
+  .foti{
+    width: 200px;
+  }
+  .left p{
+    font-size: 10px;
+    width: 200px;
+  }
+  .fu{
+    gap: 10;
+  }
+  .right-side{
+    margin-top: 15px;
+    text-align: center;
+    gap: 5px;
+  }
+  .it{
+    text-align: center;
+    justify-content: center;
+
+    margin-left: 5px;
+  }
+  .sea{
+    gap: 10px;
+  }
+  .com{
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+  .app p{
+    text-align: center;
+
+  }
+  .app img{
+    margin: auto; 
+  }
+  .Customers-up h1{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .tet{
+    margin-top: 15px;
+  }
+  .cum p{
+    margin: auto;
+  }
+  .btn5{
+    margin: auto;
+    width: 50%;
+  }
+  .home-center{
+    text-align: center;
+  }
+  .hp{
+    margin: auto;
+    width: 80%;
+  }
+  .btn4{
+    width: 100%;
+  } 
+} 

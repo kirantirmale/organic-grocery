@@ -1,16 +1,16 @@
 import React from 'react'
 import Image from "next/image";
-import { productsDown, productsUp } from '../../data/Produ';
+import { productsDown } from '../../data/Produ';
 export default function Savers() {
     return (
         <>
             <section className="width100 justify-center flex flex-col pro pt-20 pb-20">
                 <section className="width80">
 
-                    <div className='text-center flex flex-col gap-5'>
+                    <div className='text-center flex flex-col gap-5 '>
                         <p className="bgcolor text-white p-1 w-48 text-center rounded-md m-auto">Awesome Products</p>
                         <h1 className='text-orange-600 font-bold text-3xl'>Top Savers Today</h1>
-                        <div className='flex m-auto gap-5'>
+                        <div className=' m-auto gap-5  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  sm:grid-cols-3'>
                             <button className="btn4 p-2 transition rounded-sm bg-orange-100 text-black hover:bg-orange-500 hover:text-white w-28">All Products</button>
                             <button className="btn4 p-2 rounded-sm bg-orange-100 text-black hover:bg-orange-500  hover:text-white w-28">Best Sellers</button>
                             <button className="btn4 p-2 rounded-sm bg-orange-100 text-black hover:bg-orange-500   hover:text-white w-28">New Arrivals</button>
@@ -19,10 +19,9 @@ export default function Savers() {
 
                     </div>
 
-                    <div className="products flex flex-col  justify-center mt-20 gap-10">
+                    <div className="products flex flex-col md:flex-row justify-center mt-8 md:mt-20 gap-10">
 
-
-                        <div className="products-up flex justify-center gap-28">
+                        {/* <div className="products-up flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-8 md:gap-28">
                             {productsUp.map((product, index) => (
                                 <div key={index} className="card border cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
                                     <div className="bg-lime-50 m-1">
@@ -55,10 +54,10 @@ export default function Savers() {
                                     </div>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
 
 
-                        <div className="products-down flex justify-center gap-28">
+                        <div className="products-down  flex-wrap md:flex-nowrap justify-center md:justify-start gap-8 md:gap-28 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                             {productsDown.map((product, index) => (
                                 <div key={index} className="card border cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-orange-500 relative">
                                     <div className="bg-lime-50 m-1">
@@ -94,6 +93,9 @@ export default function Savers() {
                         </div>
 
                     </div>
+
+
+
                 </section>
             </section>
         </>

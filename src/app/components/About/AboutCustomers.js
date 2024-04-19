@@ -60,7 +60,7 @@ export default function AboutCustomers() {
                                 </div>
                             </div>
                         ))}
-                    </div>;
+                    </div>
 
 
                 </section>

@@ -63,6 +63,38 @@ export const productsDown = [
     price: "25.00",
     originalPrice: "30.00",
   },
+  {
+    id: 1,
+    image: "/pro1.png",
+    alt: "Fresh Tomato",
+    title: "Fresh Tomato",
+    price: "5.00",
+    originalPrice: "10.00",
+  },
+  {
+    id: 2,
+    image: "/pro2.png",
+    alt: "Organic Cabbage",
+    title: "Organic Cabbage",
+    price: "7.00",
+    originalPrice: "12.00",
+  },
+  {
+    id: 3,
+    image: "/pro3.png",
+    alt: "Yellow Orange",
+    title: "Yellow Orange",
+    price: "15.00",
+    originalPrice: "15.00",
+  },
+  {
+    id: 4,
+    image: "/pro4.png",
+    alt: "Broccoli Sliced Mix",
+    title: "Broccoli Sliced Mix",
+    price: "7.00",
+    originalPrice: "10.00",
+  },
 ];
 
 

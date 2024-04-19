@@ -6,13 +6,12 @@ import Link from "next/link";
 export default function Customers() {
     return (
         <>
-            <section className='width100'>
-                <section className='width80 flex flex-col '>
+            <section className='width-full'>
+                <section className='width80 flex flex-col'>
 
+                    <div className='Customers-up width-full md:width-80 flex flex-col md:flex-row justify-center md:gap-16'>
 
-                    <div className='Customers-up width80 flex justify-center gap-16'>
-
-                        <div className='flex flex-col gap-8'>
+                        <div className='flex flex-col gap-8 md:w-1/3 cum'>
                             <p className="bgcolor text-white p-1 w-32 text-center rounded-md">Our Testimonial</p>
                             <h1 className='text-3xl font-bold text-orange-500'>Our customers <br /> love what we do.</h1>
                         </div>
@@ -27,13 +26,12 @@ export default function Customers() {
                             />
                         </div>
 
-                        <div className='w-1/3 '>
-                            <p className='pt-16'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some and form, by injected humor, or randomized words.</p>
+                        <div className='w-full md:w-1/3'>
+                            <p className='pt-8 md:pt-16 text-center md:text-left'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some and form, by injected humor, or randomized words.</p>
                         </div>
                     </div>
 
-
-                    <div className="Customers-down flex width80 gap-10 pt-10 pb-10 justify-center ">
+                    <div className="Customers-down flex flex-col md:flex-row width-full md:width-80 gap-10 md:pt-10 md:pb-10 justify-center ">
                         {customers.map((customer, index) => (
                             <div key={index} className="maskk border cursor-pointer rounded text-center gap-10 flex p-2 transition-colors duration-300 hover:bg-lime-600">
                                 <div className="mask text-center bg-white flex flex-col gap-5 p-6">
@@ -63,10 +61,11 @@ export default function Customers() {
                         ))}
                     </div>
 
-                    <Link href="/TestimonialPage" className="block px-4 py-2 rounded mb-4 text-center  bg-orange-400 m-auto">View More</Link>
+                    <Link href="/TestimonialPage" className="block px-4 py-2 tet rounded mb-4 text-center bg-orange-400 mx-auto md:mx-0 md:self-center">View More</Link>
 
                 </section>
             </section>
+
         </>
     )
 }

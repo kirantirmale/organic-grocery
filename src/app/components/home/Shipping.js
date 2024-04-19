@@ -6,7 +6,7 @@ export default function Shipping() {
         <>
             <section className="w-full">
                 <section className="w-full lg:w-4/5 mx-auto p-5 lg:p-10">
-                    <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 justify-center ">
+                    <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 justify-center sm:flex-row">
                         {items.map((item, index) => (
                             <div key={index} className="flex border border-spacing-1 p-1 lg:w-1/2 xl:w-1/4">
                                 <Image
@@ -16,8 +16,8 @@ export default function Shipping() {
                                     height={70}
                                     className=" -ml-10"
                                 />
-                                <div className="ml-2 lg:ml-4 ">
-                                    <h5 className="text-sm lg:text-base font-bold pt-2">{item.title}</h5>
+                                <div className="ml-2 lg:ml-4 mt-2 lg:mt-0"> 
+                                    <h5 className="text-sm lg:text-base font-bold pt-1 lg:pt-2">{item.title}</h5> 
                                     <p className="text-black text-xs lg:text-sm">{item.description}</p>
                                 </div>
                             </div>
@@ -25,6 +25,7 @@ export default function Shipping() {
                     </div>
                 </section>
             </section>
+
         </>
     )
 }
