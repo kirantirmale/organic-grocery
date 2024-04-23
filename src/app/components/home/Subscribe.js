@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Subscribe() {
     return (
         <>
-            <section className='width100 bg-orange-50'>
+            <section className='width100 bg-orange-50 '>
                 <section className='width80'>
-                    <div className='flex flex-col gap-5 pt-24 pb-24'>
+                    <div className='flex flex-col gap-5 pt-24 pb-24 '>
                         <h1 className='text-4xl font-bold text-center'>
                             Subscribe to newsletter
 
@@ -15,7 +15,7 @@ export default function Subscribe() {
                             <br />
                             Lorem Ipsum has been the industry's standard dummy tex
                         </p>
-                        <div className=" flex-row gap-5  m-auto  grid grid-cols-1 md:grid-cols-3 sm:w-auto lg:grid-cols-3">
+                        <div className="  flex-row gap-5  m-auto  grid grid-cols-1 md:grid-cols-3 sm:w-auto lg:grid-cols-3">
                             <input
                                 type="text"
                                 placeholder="Your Name"

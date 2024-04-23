@@ -4,9 +4,10 @@ import React from 'react';
 export default function PageFAQs() {
   return (
     <section className='w-full'>
-      <section className=' grid grid-cols-2  width80'>
+      <section className=' grid lg:grid-cols-2 mo:grid-cols-1  width80'>
+    
         
-        <div className=' p-4'>
+        <div className=' mo:w-full'>
           <div className="relative w-full bg-white px-6 pt-10 pb-8 mt-8   sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
             <div className="mx-auto px-5">
               <div>
@@ -29,6 +30,7 @@ export default function PageFAQs() {
                     </p>
                   </details>
                 </div>
+
                 <div className="py-5">
                   <details className="group shadow">
                     <summary className="flex  active:bg-lime-600 focus:bg-lime-600 text-black border p-5 rounded cursor-pointer list-none items-center justify-between font-medium">
@@ -196,6 +198,7 @@ export default function PageFAQs() {
             </div>
           </div>
         </div>
+
 
         <div className=' p-4'>
           <div className="relative w-full bg-white px-6  pb-8   sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">

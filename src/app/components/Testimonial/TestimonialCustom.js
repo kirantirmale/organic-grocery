@@ -8,7 +8,7 @@ export default function TestimonialCustomers() {
     <>
       <section className="width100">
         <section className="width80">
-          <div className="Customers-down grid grid-cols-3 gap-10 pt-10 pb-10 justify-center">
+          <div className="Customers-down md:grid-cols-2 lg:grid-cols-3 mo:grid-cols-1 grid gap-10 pt-10 pb-10 justify-center">
             {customers9.map((customer, index) => (
               <div key={index} className="mask border cursor-pointer rounded text-center p-2 transition-colors duration-300 hover:bg-lime-600">
                 <div className="maskk bg-white flex flex-col gap-5 p-6">

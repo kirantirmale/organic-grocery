@@ -42,7 +42,7 @@ export default function Checkout() {
 
                     <div className='flex flex-row justify-between bg-lime-50 p-5 rounded border'>
 
-                        <hr className='absolute mt-10 w-4/6 ml-24 z-10' />
+                        {/* <hr className='absolute mt-10 w-4/6 ml-24 z-10' /> */}
                         <div className='flex flex-col gap-2 text-center '>
                             <div className='bg-orange-600 text-center p-6  rounded-full'>
                                 <Image
@@ -89,9 +89,9 @@ export default function Checkout() {
             </section>
 
             <section className='width100 pb-20'>
-                <section className='width80 flex flex-row gap-3'>
+                <section className='width80 flex flex-row gap-3 mo:flex-col md:flex-col lg:flex-row'>
 
-                    <section className='withh70  flex flex-col gap-3 '>
+                    <section className='withh70  flex flex-col gap-3 mo:w-full lg:w-9/12'>
                         <div className='bg-lime-50 p-2  border'>
 
                             <div className="flex  flex-col   p-2 bg-lime-50">
@@ -288,7 +288,7 @@ export default function Checkout() {
 
 
 
-                    <section className='withh30 '>
+                    <section className='withh30  mo:w-full lg:w-3/12'>
 
                         <div className='border flex flex-col gap-5 p-5 bg-lime-50 '>
                             <h1 className='text-xl font-bold '>Your order</h1>
