@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  color: white;
+  background:#609e45;
+}
 /* --------------header-green------------------------- */
 .width80 {
   width: 80%;

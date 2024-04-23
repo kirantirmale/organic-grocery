@@ -33,9 +33,9 @@ export default function FeaturedProduct() {
                         <div className='border flex flex-col gap-5 p-5 bg-lime-50 '>
                             <h1 className='text-2xl font-bold text-lime-600'>Cart</h1>
                             <hr />
-                            <div className="products-up grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-5">
+                            <div className="products-up grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 h-96 overflow-y-scroll lg:grid-cols-1 xl:grid-cols-1 gap-5">
                                 {cart.map((product, index) => (
-                                    <div key={index} className="card border cursor-pointer border-spacing-3 items-center flex  gap-5 hover:border-lime-500 relative ">
+                                    <div key={index} className="card border cursor-pointer  h-24 border-spacing-3 items-center flex  gap-5 hover:border-lime-500 relative ">
                                         <div className="bg-lime-50 m-1 ">
                                             <Image
                                                 src={product.image}
