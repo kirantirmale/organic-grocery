@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { categories, customerSupportItems } from "../data/Footer";
+import { categories, customerSupportItems, navigationItems } from "../data/Footer";
 export default function Footer() {
   return (
     <div>
@@ -73,16 +73,14 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className=' grid grid-cols-1 md:grid-cols-3 gap-5'>
+            <div className=' grid grid-cols-1 md:grid-cols-3 gap-5 mo:pt-16'>
               <div className="Navigation flex flex-col">
                 <h1 className="heading text-white sm:text-base">Navigation</h1>
                 <hr className="hrline" />
                 <ul>
-                  <li>Homepage</li>
-                  <li>About Us</li>
-                  <li>Our Products</li>
-                  <li>Our Testimonial</li>
-                  <li>Our Blogs </li>
+                {navigationItems.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
 

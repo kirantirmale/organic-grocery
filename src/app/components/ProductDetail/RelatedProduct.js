@@ -10,7 +10,7 @@ export default function RelatedProduct() {
                         <h1>Related Product</h1>
                         <hr className="border-b-2 border-lime-600 w-16" />
                     </div>
-                    <div className="products-up flex justify-center gap-28 ">
+                    <div className="products-up  justify-center gap-28  grid mo:grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
                         {productsUp.map((product, index) => (
                             <div key={index} className="card border cursor-pointer border-spacing-3 text-center flex flex-col gap-3 hover:border-lime-500 relative">
                                 <div className="bg-lime-50 m-1">
@@ -19,6 +19,7 @@ export default function RelatedProduct() {
                                         alt={product.alt}
                                         width={220}
                                         height={90}
+                                        className='mo:m-auto'
                                     />
                                 </div>
                                 <h5 className="font-bold text-black-500">{product.title}</h5>

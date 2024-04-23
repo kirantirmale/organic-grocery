@@ -9,7 +9,7 @@ export default function ContactUs() {
         <section className="w-full lg:w-4/5 mx-auto  lg:p-10">
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 justify-center ">
             {Contact.map((item, index,) => (
-              <div key={index} className="flex border border-spacing-1 p-1 lg:w-1/2 xl:w-1/4">
+              <div key={index} className="flex border border-spacing-1 p-1 lg:w-1/2 xl:w-1/4  mo:m-auto">
                 <Image
                   src={item.src}
                   alt={item.alt}

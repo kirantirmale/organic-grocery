@@ -3,12 +3,15 @@ import Image from "next/image";
 export default function AboutApp() {
     return (
         <>
-            <section className='width100'>
-                <section className='width80 flex flex-col justify-center'>
-                    <div className='app width80 flex  justify-center p-5 gap-48 rounded-2xl'>
-                        <div className='flex flex-col gap-6 align-middle mt-24' >
-                            <p className='text-3xl text-white line-clamp-3'>Shopping for vegetables &  <br /> fruit is easier with <br /> <span className='text-4xl font-bold'>TRoo Grocery App</span> </p>
-                            <p className='text-white text-2xl'>Available on Both Android and ios</p>
+            <section className='width-full md:width-80'>
+                <section className='width-full md:width-80 flex flex-col md:flex-row justify-center'>
+                    <div className='app width-full md:width-80 flex flex-col md:flex-row justify-center md:p-5 gap-6 md:gap-48 rounded-2xl'>
+                        <div className='flex flex-col gap-6 md:align-middle md:mt-24 mo:m-auto'>
+                            <p className='text-3xl md:text-4xl text-white line-clamp-3'>
+                                Shopping for vegetables &  <br /> fruit is easier with <br />
+                                <span className='font-bold'>TRoo Grocery App</span>
+                            </p>
+                            <p className='text-white text-xl md:text-2xl '>Available on Both Android and iOS</p>
                             <Image
                                 src="/App.png"
                                 alt=""
@@ -17,12 +20,12 @@ export default function AboutApp() {
                                 className=""
                             />
                         </div>
-                        <div className=''>
+                        <div className='md:mt-0'>
                             <Image
                                 src="/mobile.png"
                                 alt=""
                                 width={370}
-                                height={90}
+                                height={250}
                                 className=""
                             />
                         </div>

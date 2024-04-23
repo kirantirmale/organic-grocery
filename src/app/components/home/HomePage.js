@@ -40,11 +40,11 @@ export default function HomePage() {
 
                     </div>
 
-                    <div className="home-center flex flex-col justify-start gap-3 lg:w-1/3 lg:pt-5 lg:pb-5 mt-28">
-                        <p className="bgcolor lg:ml-0 text-white p-1 lg:w-48 md:w-48 md:m-auto text-center rounded-md w-36 hp">We are more than faster</p>
+                    <div className="home-center flex flex-col justify-start gap-3 mo:text-center lg:w-1/3 lg:pt-5 lg:pb-5 mt-28">
+                        <p className="bgcolor lg:ml-0 text-white p-1 lg:w-48 md:w-48 mo:text-center mo:w-48 md:m-auto  mo:m-auto text-center rounded-md w-36 hp">We are more than faster</p>
                         <h1 className="textcolor text-3xl lg:text-5xl font-bold md:text-center lg:text-start">The right store with The right Price</h1>
                         <p className="text-lg font-normal md:text-center  lg:text-start">Lorem ipsum dolor sit amen, consectetur adipescent alit, sed do eiusmod tempor incident ut labored et dolore magna aliquant. Et ejecta's quiz.</p>
-                        <button className="btn5 p-3 rounded-md bg-orange-500 md:m-auto lg:ml-0 text-white w-24 md:w-28 lg:w-28">Shop Now</button>
+                        <button className="btn5 p-3 rounded-md bg-orange-500 md:m-auto mo:m-auto mo:text-center mo:w-48 lg:ml-0 text-white w-24 md:w-28 lg:w-28">Shop Now</button>
                     </div>
                     <div className="home-right flex lg:w-1/3 lg:pt-5 lg:pb-5 md:m-auto">
                         <div className="mt-6 lg:mt-20">

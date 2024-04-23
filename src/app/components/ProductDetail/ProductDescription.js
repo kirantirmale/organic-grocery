@@ -11,16 +11,16 @@ export default function ProductDescription() {
                         <div className='flex flex-col gap-5 p-5 bg-lime-50 rounded'>
                             <div className=' flex flex-row gap-5'>
                                 <Link href='' className='active:text-lime-600  hover:text-lime-600 '>Description</Link>
-                                <Link href='' className='active:text-lime-600 hover:text-lime-600 '>Review (1)</Link>
-                                <Link href='' className='active:text-lime-600 hover:text-lime-600 '> Additional Information</Link>
+                                <Link href='' className='active:text-lime-600 hover:text-lime-600 '>Review </Link>
+                                <Link href='' className='active:text-lime-600 hover:text-lime-600 '> Add</Link>
                             </div>
                                 <hr/>
                             <p>Lower temperature washes and delicate spin cycles are gentler on garment, helping to maintain the color, shape and structure of the fabric. At the same
                                 time it reduces energy consumption that is used in care processes. are gentler on garment, helping to maintain the color.</p>
-                            <div className='flex flex-row gap-5'>
-                                <div className='flex flex-col gap-5'>
-                                    <h1 className='text-lime-600 font-bold'>Benefits</h1>
-                                    <div className='flex flex-col gap-5'>
+                            <div className='flex flex-row gap-5 mo:flex-col lg:flex-row'>
+                                <div className='flex flex-col gap-5  '>
+                                    <h1 className='text-lime-600 font-bold '>Benefits</h1>
+                                    <div className='flex flex-col gap-5 '>
 
                                         <div className='flex flex-row gap-2'>
                                             <Image

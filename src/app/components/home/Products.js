@@ -30,6 +30,7 @@ export default function Products() {
                                             alt={product.alt}
                                             width={220}
                                             height={90}
+                                            className='mo:m-auto'
                                         />
                                     </div>
                                     <h5 className="font-bold">{product.title}</h5>

@@ -69,7 +69,7 @@ export default function Blogs() {
                             <button className="btn4 p-3 rounded-md bg-orange-500 text-white w-40">Become a Partner</button>
                         </div>
 
-                        <div className=' grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-3  gap-2 lg:gap-14 '>
+                        <div className=' grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-3  gap-2 lg:gap-14 mo:pt-5'>
                             {Blogimages.map((image, index) => (
                                 <Image key={index} src={image} alt="img" width={170} height={75} />
                             ))}

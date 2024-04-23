@@ -44,6 +44,7 @@ export default function Header() {
       <section className="width100">
         <section className="width80">
           <section className=" items-center justify-between py-4 md:py-6 grid mo:grid-1 lg:gap-10 md:gap-5 mo:gap-2 mo:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 ">
+
             <div className="flex items-center">
               <Image
                 src="/logo.jpg"
@@ -54,7 +55,7 @@ export default function Header() {
               />
             </div>
 
-            <div className="">
+            <div className="md:hidden mo:hidden lg:block">
               <div className="border flex border-orange-300 justify-between rounded p-1  mo:grid-cols-1  lg:grid-cols-2 lg:w-full md:w-1/2 m-auto">
                 <input
                   type="text"
@@ -68,8 +69,8 @@ export default function Header() {
             </div>
 
 
-            <div className=" items-center grid md:grid-cols-2 mo:grid-cols-1 gap-2">
-              <div className=" md:flex mo:flex items-center mr-4">
+            <div className=" items-center grid md:grid-cols-2 mo:grid-cols-1 gap-2 ">
+              <div className=" md:flex mo:flex items-center mr-4 mo:hidden">
                 <Image
                   src="/Icon.png"
                   alt="Company Logo"
@@ -82,7 +83,7 @@ export default function Header() {
                   <span className="text-lime-600">+44 123 456 7890</span>
                 </div>
               </div>
-              <div className="mo:flex md:flex items-center ">
+              <div className="mo:flex md:flex items-center mo:hidden">
                 <Image
                   src="/Icon(1).png"
                   alt="Company Logo"
@@ -108,52 +109,68 @@ export default function Header() {
 
 
       <section className="width80">
-        <header className="text-dark  items-center justify-between px-6 py-4 mo:text-center grid md:grid-cols-1 mo:grid-cols-2 lg:grid-cols-2 ">
+        <header className="text-dark items-center justify-between px-6 py-4 mo:text-center grid md:grid-cols-2 mo:grid-cols-2 lg:grid-cols-2 md:grid-rows-1 ">
 
-          <div className="flex items-center space-x-4  ">
-
-            <button className="md:hidden block" onClick={toggleNavbar}>
+          <div className="flex items-center space-x-4 ">
+            <Link href="#" className="lg:hidden  md:block hover:text-green-800 text-right" onClick={toggleNavbar}>
               <svg className="h-6 w-6 text-gray-500 hover:text-green-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
-            </button>
-            <nav className={`md:flex space-x-6 grid mo:grid-col md:grid-col   ${isOpen ? 'block' : 'hidden'}`}>
+            </Link>
+
+
+
+            <nav className={`lg:flex space-x-6 md:grid-cols-2 grid mo:grid-col md:grid-col ${isOpen ? 'block' : 'hidden'}`}>
+
+
               <Link href="/" className="hover:text-green-800">Home</Link>
+
               <div className="relative">
                 <Link href="/AboutPage" className="hover:text-green-800">About Us</Link>
-              </div> 
+              </div>
+
               <Link href="/ProductsPage" className="hover:text-green-800">
-                <select id="weight-center" name="weight" className="w-16">
+              Shop
+                {/* <select id="weight-center" name="weight" className="w-16">
                   <option value="shop">Shop</option>
                   <option value="1kg">Product Page</option>
                   <option value="2kg">FaQs</option>
                   <option value="3kg">Team Page</option>
-                </select>
+                </select> */}
               </Link>
+
               <Link href="/ProductDetailPage" className="hover:text-green-800">
-                <select id="product" name="weight" className="w-20">
+              Product
+                {/* <select id="product" name="weight" className="w-20">
                   <option value="shop">Product</option>
                   <option value="FaQs">FaQs</option>
-                </select>
+                </select> */}
               </Link>
+
               <Link href="/TeamPage" className="hover:text-green-800">
-                <select id="Pages" name="weight" className="w-16">
+              Pages
+                {/* <select id="Pages" name="weight" className="w-16">
                   <option value="shop">Pages</option>
                   <option value="OurTeam">Our Team</option>
                   <option value="FAQsPage">FAQsPage</option>
-                </select>
+                </select> */}
               </Link>
+
               <Link href="/BlogsPage" className="hover:text-green-800">Blogs</Link>
+
               <Link href="/ContactUsPage" className="hover:text-green-800">Contact Us</Link>
+
             </nav>
           </div>
 
-          <div className="lg:grid-cols-3 items-center space-x-4  grid md:grid-cols-3 ml-12">
+          <div className="lg:grid-cols-3 items-center space-x-1 grid md:grid-cols-1 lg:ml-52 lg:w-2/4 mo:ml-10 mo:grid-cols-2">
+
             <Link href="#" className="hidden md:block hover:text-green-800 text-right">My Account</Link>
-            
-            <Link href="/pages/TeamPage" className='flex flex-row justify-end'>
+
+            <Link href="/TeamPage" className='flex flex-row justify-end'>
               <Image src="/Icon(2).png" alt="Company Logo" width={40} height={40} />
             </Link>
+
             <Link href="/ShoppingCart" className='flex flex-row justify-end'>
               <Image src="/Icon(3).png" alt="Company Logo" width={40} height={40} />
             </Link>
@@ -161,6 +178,7 @@ export default function Header() {
 
         </header>
       </section>
+
 
     </>
   );

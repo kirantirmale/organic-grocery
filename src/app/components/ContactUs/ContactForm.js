@@ -43,7 +43,7 @@ export default function ContactForm() {
         <>
             <section className="w-full bg-orange-50 pt-20">
                 <section className="width80">
-                    <div className="flex flex-row gap-52">
+                    <div className="flex flex-row mo:flex-col mo:gap-5 gap-52">
                         <div className="flex flex-col items-start gap-5">
                             <p className="bgcolor text-white p-1 text-center rounded-md">Leave A Message</p>
                             <h1 className='text-3xl font-bold text-orange-600'>Don’t hesitate to contact us if you need more help</h1>

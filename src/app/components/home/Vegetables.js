@@ -5,7 +5,7 @@ export default function Vegetables() {
   return (
     <>
    
-      <section className='width100 veg flex flex-col justify-center'>
+      <section className='width100 veg flex flex-col justify-center mo:pt-10 mo:pb-10'>
         <section className='vegatable flex justify-between '>
           <div className="">
             <Image
