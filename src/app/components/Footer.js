@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <div>
       <footer className="bg-green footer1 shadow   foot width100">
-        <div className="w-full max-w-screen-xl mx-auto p-2 sm:p-8 width80">
+        <div className="w-full max-w-screen-xl mx-auto p-2 sm:p-8 width80 mo:w-full">
 
-          <div class="sm:flex sm:items-center sm:justify-between width80 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 fu">
+          <div class="sm:flex sm:items-center sm:justify-between width80 mo:w-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 fu">
 
             <div class=" items-center sea grid grid-cols-1 md:grid-cols-1 sm:w-auto lg:grid-cols-2 ">
               <div class="flex items-center mr-4 ">
@@ -53,7 +53,7 @@ export default function Footer() {
             <hr />
           </section>
 
-          <section className="width80 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+          <section className="width80 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  mo:w-full">
             <div className="left  text-white grid grid-cols-1 md:grid-cols-1 sm:w-auto">
               <div className="log">
                 <Image
@@ -112,7 +112,7 @@ export default function Footer() {
           <section className="width80 hrr">
             <hr />
           </section>
-          <section className="width80  flex justify-between">
+          <section className="width80  flex justify-between  mo:w-full">
             <div className="left-side text-white">
               <p>Copyright © 2023. Themes. All rights reserved.</p>
             </div>
